@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module xmlns="urn:ietf:params:xml:ns:yang:yin:1" xmlns:ospf-cfg="urn:opendaylight:params:xml:ns:yang:ospf-cfg" name="ospf-cfg">
+  <yang-version value="1"/>
+  <namespace uri="urn:opendaylight:params:xml:ns:yang:ospf-cfg"/>
+  <prefix value="ospf-cfg"/>
+  <revision date="2017-09-10">
+    <description>
+      <text>Initial revision of ospfcfg model</text>
+    </description>
+  </revision>
+  <container name="ospf">
+    <description>
+      <text>Config ospf process</text>
+    </description>
+    <container name="ospf-router-id">
+      <leaf name="router-id">
+        <type name="string"/>
+      </leaf>
+    </container>
+  </container>
+  <rpc name="clear-ip-ospf">
+    <description>
+      <text>Command clear ip ospf *</text>
+    </description>
+  </rpc>
+</module>

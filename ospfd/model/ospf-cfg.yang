@@ -1,0 +1,23 @@
+module ospf-cfg {
+    yang-version 1;
+    namespace "urn:opendaylight:params:xml:ns:yang:ospf-cfg";
+    prefix "ospf-cfg";
+
+    revision "2017-09-10" {
+        description "Initial revision of ospfcfg model";
+    }
+    
+    container ospf {
+    	description "Config ospf process";
+    	
+    	container ospf-router-id {
+    		leaf router-id {
+    			type string;
+    		}
+    	}
+    }
+    
+    rpc clear-ip-ospf {
+    	description "Command clear ip ospf *";
+    }
+}
